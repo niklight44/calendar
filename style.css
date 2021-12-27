@@ -1,0 +1,111 @@
+*{
+    font-family: Quicksand, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: #12121f;
+    
+    
+}
+
+.calendar{
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+}
+
+.month{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    padding: 0 2rem;
+    background-color: #167e56;
+}
+
+.month i{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+
+.date h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.date p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.weekdays{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    
+}
+
+.weekdays div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(42rem/7);
+    margin: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;    /* Перенос элементов */
+    width: 100%;
+    padding: 0.2rem;
+}
+
+.days div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(40.2rem/7);
+    height: 5rem;
+    margin: 0.3rem;
+    font-size: 1.4rem;
+}
+
+.days div:hover:not(.today){
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.today{
+    background-color: #167e56;
+}
+
+.prev-date{
+    opacity: 0.5;
+}
+
+.next-date{
+    opacity: 0.5;
+}
